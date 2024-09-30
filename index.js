@@ -44,6 +44,22 @@ listaDeDestinos.push(" São Paulo");
 listaDeDestinos.push(" China");
 listaDeDestinos.push(" Japão");
 
+console.log(listaDeDestinos);
+
+const LoginCerto = "gabryelle";
+const SenhaCerta = "123";
+
+var login = entrada("Qual é o seu login?");
+var senha = entrada("Digite sua senha:");
+
+while(login != LoginCerto || senha != SenhaCerta){
+  console.log("login ou senha incorretos");
+login =  entrada("Qual é o seu login?")
+  senha = entada(" Digite sua senha:")
+
+}
+
+
 var idadeComprador = entrada("Qual a sua idade?");
 var nomeComprador = entrada("Qual o seu nome?");
 
@@ -65,4 +81,4 @@ while (contador<9){
   contador++;
 }
 var destino = entrada("digite o número que corresponde ao destino selecionado (0-8)");
-console.log("destino selecionado foi: ${listaDeDestinos[destino]}");
+console.log(`destino selecionado foi: ${listaDeDestinos[destino]}`);
