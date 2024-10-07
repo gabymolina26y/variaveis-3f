@@ -27,8 +27,16 @@ anoAtual = anoAtual + 1;
 console.log("Eu vou fazer " + idade + " anos, ano que vem, em " + anoAtual + ". Quero estar cursando Biomedicina, e pretendo me formar em " + anoFormatura);
 
 
+
+console.log(" ")
+console.log("-----------------------------");
+console.log("|     agência de viagens    |");
+console.log("-----------------------------");
+console.log(" ")
+
 //Agência de viagens Hawaii Paris Nova York Rio de Janeiro Tokyo
 const listaDeDestinos = new Array(
+ 
   " Hawaii",
   " Paris",
   " Nova York",
