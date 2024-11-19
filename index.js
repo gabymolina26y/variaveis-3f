@@ -28,65 +28,66 @@ console.log("Eu vou fazer " + idade + " anos, ano que vem, em " + anoAtual + ". 
 
 
 
-console.log(" ")
-console.log("-----------------------------");
-console.log("|     agência de viagens    |");
-console.log("-----------------------------");
-console.log(" ")
+console.log ("-----------------------------------------");
+console.log ("-------------Âgencia de viagens----------");
+console.log ("-----------------------------------------");
+console.log ("                                         ");
 
-//Agência de viagens Hawaii Paris Nova York Rio de Janeiro Tokyo
+console.log ("-----------------------------------------");
+console.log ("--------------Area de login--------------");
+console.log ("-----------------------------------------");
+console.log ("                                         ");
+
+//Agencia de viagens hawai, paris, nova york, rio de janeiro, tokyo
 const listaDeDestinos = new Array(
- 
-  " Hawaii",
-  " Paris",
-  " Nova York",
-  " Rio de Janeiro",
-  " Tokyo"
-  );
+  "hawai",
+  "Paris",
+  "Nova York",
+  "Rio De Janeiro",
+  "Tokyo"
+);
 
-console.log(listaDeDestinos);
-console.log(listaDeDestinos[3]);
-listaDeDestinos.push(" Coronel Vivida");
-console.log(listaDeDestinos);
-listaDeDestinos.push(" São Paulo");
-listaDeDestinos.push(" China");
-listaDeDestinos.push(" Japão");
+const loginCerto = "gabryelle";
+const senhaCerta = 1234;
 
-console.log(listaDeDestinos);
+var login = entrada("Qual é o seu username?");
+var senha = entrada("Qual é a sua senha?");
 
-const LoginCerto = "gabryelle";
-const SenhaCerta = "123";
-
-var login = entrada("Qual é o seu login?");
-var senha = entrada("Digite sua senha:");
-
-while(login != LoginCerto || senha != SenhaCerta){
-  console.log("login ou senha incorretos");
-login =  entrada("Qual é o seu login?")
-  senha = entada(" Digite sua senha:")
-
+while (login != loginCerto || senha != senhaCerta){
+  console.log ("Login ou senha incorretos");
+  login = entrada("Qual é o seu username?");
+  senha = entrada("Qual é a sua senha?");
 }
+console.log ("");
+console.log ("-----------------------------------------");
+console.log ("-------------Identificação---------------");
+console.log ("-----------------------------------------");
+console.log ("                                         ");
 
-
+var nomeComprador = entrada("Digite seu nome: ");
 var idadeComprador = entrada("Qual a sua idade?");
-var nomeComprador = entrada("Qual o seu nome?");
 
-if (idadeComprador >=18) {
-  console.log("Olá senhor(a) " + nomeComprador );
-  console.log("Comprador maior de idade");
-  console.log ("destinos disponiveis: " + listaDeDestinos)
-  console.log ("escolha seu destino");
-} 
-else {
-  console.log("olá senhor(a)" + nomeComprador);
-  console.log("infelizmente, não será finalizado o procedimento, pois idade informada é menor de 18 anos de idade.");
-  console.log("não será finalizado devido a idade");
-}
 
- var contador = 0;
-while (contador<9){
-  console.log(listaDeDestinos[contador]);
-  contador++;
+console.log ("");
+console.log ("-----------------------------------------");
+console.log ("-------------Lista de vôos---------------");
+console.log ("--------------Disponiveis----------------");
+console.log ("-----------------------------------------");
+console.log ("");
+
+if(idadeComprador >=18){
+  console.log ("Olá senhor(a) " + nomeComprador);
+  console.log("comprador maior de idade");
+  console.log("Escolha seu destino: ");
+  var contador = 0;
+
+
+  while(contador <5){
+
+    console.log(listaDeDestinos[contador]);
+    contador++
+
+  }
+  var destino = entrada("Digite o numero que corresponde ao destino selecionado (0-5): ");
+  console.log (`destino selecionado foi: ${listaDeDestinos[destino]}`);
 }
-var destino = entrada("digite o número que corresponde ao destino selecionado (0-8)");
-console.log(`destino selecionado foi: ${listaDeDestinos[destino]}`);
